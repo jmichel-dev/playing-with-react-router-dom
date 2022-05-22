@@ -6,7 +6,7 @@ const MainHeader = () => {
     <header className={classes.header}>
       <ul>
         <li>
-          <NavLink activeClassName={classes.active} to="/">
+          <NavLink activeClassName={classes.active} to="/welcome">
             Home
           </NavLink>
         </li>

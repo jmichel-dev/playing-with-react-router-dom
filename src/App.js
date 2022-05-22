@@ -6,6 +6,7 @@ import "./index.css";
 import Home from "./page/Home";
 import Products from "./page/Products";
 import { Switch } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       <main>
         <Switch>
           <Route exact path="/">
+            <Redirect to="/welcome" />
+          </Route>
+          <Route path="/welcome">
             <Home />
           </Route>
           <Route path="/products/:productId">
